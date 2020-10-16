@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Special Elite', cursive;
+
+}
+
+:root{
+    --mainColor : rgb(150, 7, 81);
+}
+
+body {
+    flex: 1;
+    background-image: linear-gradient(to top right, rgba(20, 19, 19, 0.8), rgba(2, 2, 2, 0.8)),  url('../back.jpg');
+    background-size: auto;
+    background-attachment: fixed;
+
+}
+
+
+div {
+    background-image: none;
+}
+
+.Main {
+    padding-top: 50px;
+    height: 100vh;
+    position: relative;
+    padding-left: 250px;
+    padding-right: 200px;
+    padding-bottom:20px;
+
+   
+  background-image: none;
+}
+h1{
+    color:white;
+    
+}
+
+.hugeText {
+    color :  rgb(214, 0, 114);
+    font-size: 85px;
+    
+}
+
+
+.skillGrid{
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    column-gap: 15%;
+  
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+.normalText {
+    color:white;
+    font-size: 20px;
+}
+
+.contact-text {
+    color:white;
+    font-size: 20px;
+    align-self: center;
+ 
+}
+
+.pink-text {
+    color :  rgb(214, 0, 114);
+}
+
+.pink-text-med {
+    color :  rgb(214, 0, 114);
+    font-size: 35px;
+}
+
+.introText{
+    padding-top:170px;
+}
+.Header{
+    height : 100vh;
+    width: 100px;
+    margin-right: 150px;
+   background-color:rgba(56, 17, 38, 0.9);;
+    flex-direction: column;
+    display: flex;
+    align-content: flex-end;
+    position: fixed;
+    transition: ease-out 1s;
+    background-image: none;
+    z-index: 1;
+    
+}
+.nav-item {
+    font-size: 15px;
+    display: flex;
+    height: 70px;
+    padding-top: 20px;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+    background-image: none;
+}
+
+.nav-item:hover{
+    background-color: rgb(150, 7, 81);
+    transition: ease-out 800ms;
+    background-image: none;
+    border-radius: 40px;
+}
+
+.nav-item:hover .link-text {
+    display: contents;
+    align-self: center;
+    transition: ease-out 1s;
+    background-image: none;
+  
+}
+
+.icon {
+    font-size: 32px;
+    color: white;
+    background-image: none;
+    padding-bottom: 5px;
+}
+
+
+.contact-icon {
+    font-size: 45px;
+    color: white;
+    background-image: none;
+    padding-bottom: 5px;
+}
+icon :hover{
+    background-color: rgb(150, 7, 81);
+}
+
+li:last-child{
+    margin-top: auto;
+    margin-bottom: 10px;
+    background-image: none;
+}
+
+
+.active {
+    background-color: rgb(214, 0, 114);
+    border-radius: 40px;
+}
+
+.active  .link-text{
+   
+    background-image: none;
+    border-radius: 40px;
+    display: contents;
+    align-self: center;
+   
+}
+
+ul{
+
+
+}
+
+.listStyle {
+    list-style: none;
+    align-content: space-around;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    background-image: none;
+}
+
+
+.menu-item{
+    font-size: 45px;
+    padding-top: 20px;
+    color: white;
+}
+
+
+
+
+.link-text{
+    display: none;
+    background-image: none;
+
+}
+
+
+li{
+    text-decoration: none;
+    padding-top: 10px;
+    background-image: none;
+    color: white;
+}
+
+.skillText {
+    color :white;
+    align-self: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ProgressContainer{
+    width: 400px;
+    height: 20px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:rgb(179, 25, 104);
+    background-color: rgb(10, 3, 8);
+    transition: ease-in 800ms;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:50px ;
+}
+
+.Skill {
+    background-color: rgb(179, 25, 104);
+    transition: ease-in 800ms;
+    width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.A {
+    width : 20%
+}
+
+.B {
+    width : 40%
+}
+
+.C {
+    width : 60%
+}
+
+.D {
+    width : 80%
+}
+
+.E {
+    width : 100%
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 15%;
+  
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+.contact-container{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
