@@ -281,7 +281,7 @@ li{
 }
 
 
-@media(max-width :600px){
+@media(max-width :400px){
 .Main {
     padding-top: 50px;
     height: 100vh;
@@ -337,10 +337,12 @@ li{
 
 .listStyle {
     list-style: none;
-    align-content: flex-start;
+    align-content: center;
+    margin-left: 20px;
+    
     flex-direction: row;
     display: flex;
-    height: 100vh;
+    
     background-image: none;
 }
 
