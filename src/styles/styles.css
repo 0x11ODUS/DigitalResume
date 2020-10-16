@@ -281,7 +281,7 @@ li{
 }
 
 
-@media(max-width :400px){
+@media(max-width :600px){
 .Main {
     padding-top: 50px;
     height: 100vh;
