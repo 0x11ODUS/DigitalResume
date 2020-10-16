@@ -16,21 +16,24 @@ function App() {
   return (
     <Router>
     <div>
-    <Header />
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
         <Route path="/AboutMe">
+        <Header />
           <About />
         </Route>
         <Route path="/Skillset">
+        <Header />
             <Skills />
         </Route>
         <Route path="/Projects">
+        <Header />
             <Projects />
         </Route>
         <Route path="/Contact">
+        <Header />
            <Contact />
         </Route>
       </Switch>
