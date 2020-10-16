@@ -1,15 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './styles/styles.css'
 import {
     Link,
     useLocation
   } from "react-router-dom";
-
 export default function Header(props){
 
     const location = useLocation()
-
     return(
         <div className="Header">
         <ul className="listStyle">
