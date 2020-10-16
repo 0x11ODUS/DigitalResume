@@ -51,7 +51,7 @@ export default function ProgressBar(props) {
                 )
                 break;
         }
-    },[])
+    },[props.Value])
    
 
     return(
