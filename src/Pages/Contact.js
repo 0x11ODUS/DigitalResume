@@ -23,7 +23,7 @@ export default function Contact() {
                      LINKEDIN
                 </a>
 
-                <a href="https://github.com/ScoRpius11/DigitalResume" className="nav-item">
+                <a href="#" className="nav-item">
                 <i class="fa fa-github contact-icon" aria-hidden="true"></i>
 
                      GITHUB

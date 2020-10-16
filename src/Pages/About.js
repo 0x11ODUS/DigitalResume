@@ -11,7 +11,7 @@ export default function About() {
 
         
                 
-            <img src={require("../me3.jpg")} alt="Nkosana Khoza - Me" style={{width : 250,height : 250,borderRadius:100,float : "right",margin:10}}/>
+            <img src={require("../me3.jpg")} className="image"/>
               
 
               <p className="normalText" >
@@ -19,13 +19,13 @@ export default function About() {
   And Relearn Anything In A Different Technique. I Believe There's A Technique To Getting Things Right And Most Times Getting Them Right The First Time. I'm Not A Copy Of All The Textbooks I've Read And Gone Through To Get My Qualification, Yet I Am A Compound Of The Most Critical Concepts From The Textbooks, Knowledge From People Who Are The Industry That Are Close To Me, The Knowledge I Gather Daily In My Interest, And The Skill To Use The Aformentioned In Synergy And Conjunction Such That Concepts May Be Related And Applied To Practical Examples And Situations, And Facts May Be Used To Support Certain Arguments And/Or Design Decisions. I Am A Very Focused, Driven And Practical Individual, I Understand The Basic Theory And Use That As A Basis Of Coming Up With A Creative, Innovative Solution.
               </p>
 
-            <h1 style={{paddingTop:70}}><span className="hugeText">Education</span></h1>
+            <h1 className="paddingHeader"><span className="hugeText">Education</span></h1>
 
-           <ul style={{paddingLeft : 70}}>
+           <ul className="paddingList">
                <li>
                <h2 className="pink-text"> <span className="normalText" >Grade 12 - Matric , </span>Finetown Secondary School  (2012 - 2016)</h2>
             <h2 className="pink-text"> <b>Obtained Distinctions In :</b></h2>
-            <ul style={{paddingLeft : 70}}>
+            <ul className="paddingList">
                 <li >
                     <p className="normalText" >Physical Sciences</p>
                 </li>
@@ -44,8 +44,8 @@ export default function About() {
                </li>
            </ul>
 
-            <h1 style={{paddingTop : 70}}><span className="hugeText">Awards</span></h1>
-            <ul style={{paddingLeft : 70}}>
+            <h1 className="paddingHeader"><span className="hugeText">Awards</span></h1>
+            <ul className="paddingList">
                 <li>
                     <p className="normalText"><span className="pink-text">UJenius Academic Excellence Award</span>, University Of Johannesburg   (2018) </p>
                 </li>
@@ -56,9 +56,9 @@ export default function About() {
          
             </ul>
 
-            <h1 style={{paddingTop : 70}}><span className="hugeText">H</span> obbies and Interests</h1>
+            <h1 className="paddingHeader"><span className="hugeText">H</span> obbies and Interests</h1>
            <div>
-           <ul style={{paddingLeft : 70}}>
+           <ul className="paddingList">
                 <li>
                     <p className="normalText" >I Disassemble Old Electronics For Spare Parts In My Projects :)</p>
                 </li>

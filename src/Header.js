@@ -1,18 +1,21 @@
 import React from 'react';
+import logo from './logo.svg';
 import './styles/styles.css'
 import {
     Link,
     useLocation
   } from "react-router-dom";
+
 export default function Header(props){
 
     const location = useLocation()
+
     return(
         <div className="Header">
         <ul className="listStyle">
               <li>
                 <Link to="/" style={{textDecoration:"none"}}>
-                       {location.pathname === "/" ? (
+                       {location.pathname == "/" ? (
                          <a href="#" className="nav-item active">
                          <i class="fa fa-home icon" aria-hidden="true"  ></i>
                          <span className="link-text"> HOME</span>
@@ -29,7 +32,7 @@ export default function Header(props){
     
               <li>
                 <Link to="/AboutMe"  style={{textDecoration:"none"}}>
-              { location.pathname === "/AboutMe" ? (  <a href="#"className="nav-item active" >
+              { location.pathname == "/AboutMe" ? (  <a href="#"className="nav-item active" >
                 <i class="fa fa-user icon" aria-hidden="true" ></i>
                 <span className="link-text"> ABOUT</span>
                 </a>) : (
@@ -42,7 +45,7 @@ export default function Header(props){
               </li>
     
               <li>
-               {location.pathname === "/Skillset" ? (
+               {location.pathname == "/Skillset" ? (
                     <a href="/Skillset"className="nav-item active" >
                     <i class="fa fa-line-chart icon" aria-hidden="true" ></i>
                     <span className="link-text"> SKILLSET</span>
@@ -70,14 +73,14 @@ export default function Header(props){
                </li> */}
     
               <li>
-                {location.pathname === "/Contact" ? (
+                {location.pathname == "/Contact" ? (
                       <a href="/Contact"className="nav-item active" >
-                      <i class="fa fa-phone icon" aria-hidden="true" style={{fontSize:42,color:"white"}}></i>
+                      <i class="fa fa-phone icon" aria-hidden="true" ></i>
                       <span className="link-text"> CONTACT</span>
                       </a>
                 ) : (
                       <a href="/Contact"className="nav-item" >
-                      <i class="fa fa-phone icon" aria-hidden="true" style={{fontSize:42,color:"white"}}></i>
+                      <i class="fa fa-phone icon" aria-hidden="true" ></i>
                       <span className="link-text"> CONTACT</span>
                       </a>
                 )}

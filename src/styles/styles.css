@@ -18,6 +18,9 @@ body {
 }
 
 
+
+@media(min-width : 1025px){
+    
 div {
     background-image: none;
 }
@@ -29,8 +32,6 @@ div {
     padding-left: 250px;
     padding-right: 200px;
     padding-bottom:20px;
-
-   
   background-image: none;
 }
 h1{
@@ -41,7 +42,6 @@ h1{
 .hugeText {
     color :  rgb(214, 0, 114);
     font-size: 85px;
-    
 }
 
 
@@ -49,7 +49,6 @@ h1{
     display: grid;
     grid-template-columns: 300px 300px ;
     column-gap: 15%;
-  
     padding-top: 30px;
     padding-left: 0;
 }
@@ -252,11 +251,14 @@ li{
     width : 100%
 }
 
+.image {
+    width : 250px;height : 250px;border-radius:100px;float : right;margin:10px;
+}
+
 .contact-grid{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     column-gap: 15%;
-  
     padding-top: 30px;
     padding-left: 0;
 }
@@ -266,4 +268,208 @@ li{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+
+.paddingList {
+   padding-left : 70px;
+}
+
+.paddingHeader {
+    padding-top: 70px;
+}
+
+}
+
+
+@media(max-width :400px){
+.Main {
+    padding-top: 50px;
+    height: 100vh;
+    position: relative;
+    padding-bottom:100px;
+    background-image: none;
+    margin-left : 20px;
+    margin-right: 20px;
+    }
+
+    .hugeText {
+        color :  rgb(214, 0, 114);
+        font-size: 28px;
+    }
+
+    .introText{
+        padding-top:50px;
+        padding-right: 30px;
+    }
+
+    h1{
+        color:white;
+        font-size: 16px;
+    }
+    
+.pink-text {
+    color :  rgb(214, 0, 114);
+    font-size: 12px;
+}
+
+.pink-text-med {
+    color :  rgb(214, 0, 114);
+    font-size: 15px;
+}
+
+.normalText {
+    color:white;
+    font-size: 10px;
+}
+
+.Header{
+    height : 50px;
+    width: 100vh;
+   background-color:rgba(77, 11, 46, 1);;
+    flex-direction: row;
+    display: block;
+    bottom:  0px;
+    position: fixed;
+    transition: ease-out 1s;
+    background-image: none;
+    z-index: 2;
+}
+
+.listStyle {
+    list-style: none;
+    align-content: flex-start;
+    flex-direction: row;
+    display: flex;
+    height: 100vh;
+    background-image: none;
+}
+
+.nav-item {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    margin-left : 10px;
+    margin-right : 10px;
+    padding-left:  10px;
+    justify-self: center;
+    padding-bottom: 40px;
+
+}
+
+.nav-item:hover{
+    background-color: rgb(150, 7, 81);
+    transition: ease-out 800ms;
+    background-image: none;
+    border-radius: 40px;
+}
+
+.link-text{
+  
+    background-image: none;
+}
+
+.icon {
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    padding-top: 5px;
+    background-image: none;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.ProgressContainer{
+    width: 200px;
+    align-self: center;
+    height: 20px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:rgb(179, 25, 104);
+    background-color: rgb(10, 3, 8);
+    transition: ease-in 800ms;
+    justify-self: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:50px ;
+}
+
+.skillGrid{
+    display: grid;
+    grid-template-rows: max-content;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 0;
+}
+
+.Skill {
+    background-color: rgb(179, 25, 104);
+    transition: ease-in 800ms;
+    width: 200px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.A {
+    width : 20%
+}
+
+.B {
+    width : 40%
+}
+
+.C {
+    width : 60%
+}
+
+.D {
+    width : 80%
+}
+
+.E {
+    width : 100%
+}
+
+.skillText {
+    color :white;
+    align-self: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.image {
+    width : 150px;height : 150px;border-radius:100px;float : right;margin:10px;
+}
+
+.paddingList {
+    padding-left : 40px;
+    list-style: circle;
+    color: white;
+ }
+
+ .paddingHeader {
+     padding-top: 40px;
+ }
+
+ .contact-grid{
+    display: grid;
+    grid-template-rows: max-content;
+    padding-top: 20px;
+}
+
+
+.contact-icon {
+    font-size: 25px;
+    align-self: center;
+    color: white;
+    background-image: none;
+    padding-bottom: 5px;
+}
 }
