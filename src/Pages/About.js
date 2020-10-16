@@ -11,7 +11,7 @@ export default function About() {
 
         
                 
-            <img src={require("../me3.jpg")} style={{width : 250,height : 250,borderRadius:100,float : "right",margin:10}}/>
+            <img src={require("../me3.jpg")} alt="Nkosana Khoza - Me" style={{width : 250,height : 250,borderRadius:100,float : "right",margin:10}}/>
               
 
               <p className="normalText" >
