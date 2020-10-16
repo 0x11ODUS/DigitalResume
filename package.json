@@ -1,5 +1,9 @@
 {
   "name": "myreacttut1.2",
+  "engines": {
+    "npm": "6.12.0",
+    "node": "12.13.0"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
