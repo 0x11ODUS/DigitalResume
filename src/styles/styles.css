@@ -463,7 +463,7 @@ li{
  .contact-grid{
     display: grid;
     grid-template-rows: max-content;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 
@@ -474,4 +474,149 @@ li{
     background-image: none;
     padding-bottom: 5px;
 }
+}
+
+
+@media screen and (min-width : 480px) and  (max-width :1025px){
+
+    .Main {
+        padding-top: 50px;
+        height: 100vh;
+        position: relative;
+        padding-bottom:100px;
+        background-image: none;
+        margin-left : 150px;
+        margin-right: 20px;
+        }
+
+
+        
+        .hugeText {
+            color :  rgb(214, 0, 114);
+            font-size: 50px;
+        }
+    
+        .introText{
+            padding-top:20px;
+            padding-right: 30px;
+        }
+    
+        h1{
+            color:white;
+            font-size: 16px;
+        }
+        
+    .pink-text {
+        color :  rgb(214, 0, 114);
+        font-size: 18px;
+    }
+    
+    .pink-text-med {
+        color :  rgb(214, 0, 114);
+        font-size: 18px;
+    }
+    
+    .normalText {
+        color:white;
+        font-size: 15px;
+    }
+
+    .image {
+        width : 200px;height : 200px;border-radius:100px;float : right;margin:10px;
+    }
+    
+
+    .Header{
+        height : 100vh;
+        width: 100px;
+        margin-right: 150px;
+       background-color:rgba(56, 17, 38, 1);;
+        flex-direction: column;
+        display: flex;
+        align-content: flex-end;
+        position: fixed;
+        transition: ease-out 1s;
+        background-image: none;
+        z-index: 2;
+        
+    }
+    .nav-item {
+        font-size: 15px;
+        display: flex;
+        height: 70px;
+        padding-top: 20px;
+        flex-direction: column;
+        text-decoration: none;
+        color: white;
+        align-self: center;
+        text-align: center;
+        align-content: center;
+        background-image: none;
+    }
+    
+    .nav-item:hover{
+        background-color: rgb(150, 7, 81);
+        transition: ease-out 800ms;
+        background-image: none;
+        border-radius: 40px;
+    }
+    
+
+    .listStyle {
+        list-style: none;
+        align-content: center;
+        flex-direction: column;
+        display: flex;
+        background-image: none;
+    }
+
+    .skillGrid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left: 0;
+    }
+    
+    .Skill {
+        background-color: rgb(179, 25, 104);
+        transition: ease-in 800ms;
+        width: 200px;
+        border-radius: 12px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .skillText {
+        color :white;
+        align-self: center;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .contact-grid{
+        display: flex;
+        padding-top: 100px;
+    }
+    
+    
+    .contact-icon {
+        font-size: 35px;
+        align-self: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: white;
+        background-image: none;
+        padding-bottom: 5px;
+    }
+
+    .paddingList {
+        padding-left : 40px;
+        list-style: circle;
+        color: white;
+     }
+    
 }
