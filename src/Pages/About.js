@@ -5,16 +5,9 @@ import ProgressBar from '../Components/ProgressBar.js'
 export default function About() {
     return(
         <div className="Main">
-          
                 <h1><span className="hugeText">So, </span> About Me</h1>
-
-
-        
-                
-            <img src={require("../me3.jpg")} className="image"/>
-              
-
-              <p className="normalText" >
+                <img src={require("../me3.jpg")} className="image"/>
+                <p className="normalText" >
               I Am A Passionate Graduate in The Field Of Computer Science Informatics. I Am A Huge loT Enthusiast And Hobbyist Driven By The Unshakable Urge To Design And Build Quality Software For Clients, While Satisfying And Completely Meeting Business Requirements. I Am A Hardworking Individual And Always Have A Beginner's Mind. I Am Always Willing To Learn, Teach , Unlearn What I Already Think I Know
   And Relearn Anything In A Different Technique. I Believe There's A Technique To Getting Things Right And Most Times Getting Them Right The First Time. I'm Not A Copy Of All The Textbooks I've Read And Gone Through To Get My Qualification, Yet I Am A Compound Of The Most Critical Concepts From The Textbooks, Knowledge From People Who Are The Industry That Are Close To Me, The Knowledge I Gather Daily In My Interest, And The Skill To Use The Aformentioned In Synergy And Conjunction Such That Concepts May Be Related And Applied To Practical Examples And Situations, And Facts May Be Used To Support Certain Arguments And/Or Design Decisions. I Am A Very Focused, Driven And Practical Individual, I Understand The Basic Theory And Use That As A Basis Of Coming Up With A Creative, Innovative Solution.
               </p>

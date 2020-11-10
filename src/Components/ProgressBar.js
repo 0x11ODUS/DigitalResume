@@ -1,13 +1,10 @@
 import React,{useState,useEffect} from 'react';
-import { Switch } from 'react-router-dom';
 import '../styles/styles.css'
 
 
 export default function ProgressBar(props) {
-
     const [data,setData] = useState(null)
-
-
+    
     useEffect(() =>{
         console.log("MOUNT PROGRESS BAr")
         switch(props.Value){
