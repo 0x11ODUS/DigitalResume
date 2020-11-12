@@ -1,5 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import '../styles/styles.css'
+import {animated, useSpring}  from 'react-spring'
+
+
 
 
 export default function ProgressBar(props) {
@@ -10,9 +13,9 @@ export default function ProgressBar(props) {
         switch(props.Value){
             case "A":
                 setData(
-                    <div className="Skill A">
+                    <animated.Div className="Skill A">
                         20%
-                    </div>
+                    </animated.Div>
                 )
                 break;
     

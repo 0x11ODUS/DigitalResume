@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/styles.css'
+import '../styles/styles.css'
 import {
     Link,
     useLocation
@@ -8,7 +8,6 @@ import {
 export default function Header(props){
 
     const location = useLocation()
-
     return(
         <div className="Header">
         <ul className="listStyle">

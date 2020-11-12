@@ -13,7 +13,6 @@ export default function About() {
               </p>
 
             <h1 className="paddingHeader"><span className="hugeText">Education</span></h1>
-
            <ul className="paddingList">
                <li>
                <h2 className="pink-text"> <span className="normalText" >Grade 12 - Matric , </span>Finetown Secondary School  (2012 - 2016)</h2>
