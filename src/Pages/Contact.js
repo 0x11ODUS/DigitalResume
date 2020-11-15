@@ -1,49 +1,34 @@
 import React from 'react';
 import '../styles/styles.css'
+import {useSpring, animated} from 'react-spring'
+import ContactItem from '../Components/ContactItem';
 
 
 export default function Contact() {
+
+     const springProps = useSpring({top :0, from:{ top:-800}, config : {duration : 1500, mass: 45, friction : 0.1}})
+     
+
     return(
-        <div className="Main">
-            <div className="introText">
+        <animated.div style={springProps}  className="Main">
+          <div className="introText">
                 <h1><span className="hugeText">Contact, </span><span className="pink-text-med">M</span>e through one of these platforms</h1>
-           
+          </div>
 
            <div className="contact-grid">
 
-                <a href="mailto:nkosanakhoza2@gmail.com?subject=Job%20Offer%20Portfolio" className="nav-item">
-                <i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
+               <ContactItem Link="mailto:nkosanakhoza2@gmail.com?subject=Job%20Offer%20Portfolio" Text="EMAIL" Icon="fa-envelope" />
+           
+               <ContactItem Link="https://www.linkedin.com/in/nkosana-khoza-063119143/" Text="LINKEDIN" Icon="fa-linkedin" />
+               
+               <ContactItem Link="https://github.com/ScoRpius11" Text="GITHUB" Icon="fa-github" />
 
-                     EMAIL
-                </a>
+               <ContactItem Link="https://www.instagram.com/11sco_r_pio11/" Text="INSTAGRAM" Icon="fa-instagram" />
 
-                <a href="https://www.linkedin.com/in/nkosana-khoza-063119143/" className="nav-item">
-                <i class="fa fa-linkedin contact-icon" aria-hidden="true"></i>
-
-                     LINKEDIN
-                </a>
-
-                <a href="#" className="nav-item">
-                <i class="fa fa-github contact-icon" aria-hidden="true"></i>
-
-                     GITHUB
-                </a>
-
-                <a href="https://www.instagram.com/11sco_r_pio11/" className="nav-item">
-                <i class="fa fa-instagram contact-icon" aria-hidden="true"></i>
-
-                     INSTAGRAM
-                </a>
-
-                <a href="https://wa.me/27676647514" className="nav-item">
-                <i class="fa fa-whatsapp contact-icon" aria-hidden="true"></i>
-
-                     WHATSAPP
-                </a>
+               <ContactItem Link="https://wa.me/27676647514" Text="WHATSAPP" Icon="fa-whatsapp" />
                
            </div>
 
-            </div>
-        </div>
+            </animated.div>
     )
 }

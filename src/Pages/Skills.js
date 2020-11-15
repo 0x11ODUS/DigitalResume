@@ -1,11 +1,14 @@
 import React from 'react';
 import ProgressBar from '../Components/ProgressBar';
 import '../styles/styles.css'
+import {animated, useSpring}  from 'react-spring'
 
 
 export default function Skills() {
+
+    const springProps = useSpring({top :0, from:{ top:-1500}, config : {duration : 1500}})
     return(
-        <div className="Main">
+        <animated.div style={springProps} className="Main">
          
                 <h1><span className="hugeText">Skills</span> and Abilities  </h1>
                 <p className="normalText">Below is a subset of my skillset and technologies i can use , accumulated over my career</p>
@@ -33,6 +36,6 @@ export default function Skills() {
 
             
             
-        </div>
+        </animated.div>
     )
 }

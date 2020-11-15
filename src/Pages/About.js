@@ -1,10 +1,14 @@
 import React from 'react';
 import '../styles/styles.css'
 import ProgressBar from '../Components/ProgressBar.js'
+import {animated, useSpring} from 'react-spring'
 
-export default function About() {
+
+export default function About(props) {
+
+    const springProps = useSpring({left :0, from:{ left:-2000}, config : {duration : 1500}})
     return(
-        <div className="Main">
+        <animated.div style={springProps} className="Main">
                 <h1><span className="hugeText">So, </span> About Me</h1>
                 <img src={require("../me3.jpg")} className="image"/>
                 <p className="normalText" >
@@ -85,6 +89,6 @@ export default function About() {
             </div>
 
           
-        </div>
+        </animated.div>
     )
 }
