@@ -3,6 +3,8 @@ import '../styles/styles.css'
 import {animated, useSpring}  from 'react-spring'
 
 export default function ProgressBar(props) {
+    let screenWidth = window.innerWidth
+
     const [xwidth,setWidth] = useState(0)
     const [barValue, setBarValue] = useState(0)
     const springProps = useSpring({
@@ -19,17 +21,21 @@ export default function ProgressBar(props) {
             case "A":
                 setData(
                     <animated.div style={springProps} className="Skill A">
-                        {springProps.number}
+                       20%
                     </animated.div>
                 )
-                setWidth( 400 * 0.2)
+                if(screenWidth >=480){
+                    setWidth( 400 * 0.2)
+                }else {
+                    setWidth( 200 * 0.2)
+                }
                 setBarValue(100 * 0.2)
                 break;
     
             case "B":
                 setData(
                     <animated.div style={springProps} className="Skill B">
-                       {springProps.number}
+                       40%
                     </animated.div>
                 )
                 setWidth( 400 * 0.4)
@@ -39,30 +45,42 @@ export default function ProgressBar(props) {
             case "C":
                 setData(
                     <animated.div style={springProps} className="Skill C">
-                        {springProps.number}
+                        60%
                     </animated.div>
                 )
-                setWidth( 400 * 0.6)
+                if(screenWidth >=480){
+                    setWidth( 400 * 0.6)
+                }else {
+                    setWidth( 200 * 0.6)
+                }
                 setBarValue(100 * 0.6)
                 break;
                 
             case "D":
                 setData(
                     <animated.div style={springProps} className="Skill D">
-                       {springProps.number}
+                       80%
                     </animated.div>
                 )
-                setWidth( 400 * 0.8)
+                if(screenWidth >=480){
+                    setWidth( 400 * 0.8)
+                }else {
+                    setWidth( 200 * 0.8)
+                }
                 setBarValue(100 * 0.8)
                 break;
     
             case "E":
                 setData(
                     <animated.div style={springProps} className="Skill E">
-                       {springProps.number}
+                       100%
                     </animated.div>
                 )
-                setWidth( 400 )
+                if(screenWidth >=480){
+                    setWidth( 400 )
+                }else {
+                    setWidth( 200)
+                }
                 setBarValue(100)
                 break;
         }

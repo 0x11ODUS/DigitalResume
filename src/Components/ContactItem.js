@@ -9,7 +9,7 @@ export default function ContactItem(props){
 
     return(
         <animated.div style={spring}>
-               <a href={props.Link} className="nav-item">
+               <a href={props.Link} className="nav-item centerElement">
                 <i class={"fa " + props.Icon + " contact-icon"} aria-hidden="true"></i>
 
                      {props.Text}
