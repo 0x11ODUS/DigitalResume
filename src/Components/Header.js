@@ -56,7 +56,7 @@ export default function Header(props){
                )}
               </li>
     
-              {/*<li>
+             <li>
                {location.pathname == "/Projects" ? (
                     <a href="/Projects"className="nav-item active" >
                     <i class="fa fa-file icon" aria-hidden="true" ></i>
@@ -68,7 +68,7 @@ export default function Header(props){
                 <span className="link-text"> PROJECTS</span>
                 </a>
                )}
-               </li> */}
+               </li> 
     
               <li>
                 {location.pathname == "/Contact" ? (
