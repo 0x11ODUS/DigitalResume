@@ -12,7 +12,7 @@ export default function Skills() {
          
                 <h1><span className="hugeText">Skills</span> and Abilities  </h1>
                 <p className="normalText">Below is a subset of my skillset and technologies i can use , accumulated over my career</p>
-                
+            
                 <div className="skillGrid">
                     <ProgressBar Value="D" Name="Java" />
                     <ProgressBar Value="E" Name="Python" />

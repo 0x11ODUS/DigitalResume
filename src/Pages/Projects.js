@@ -13,6 +13,7 @@ export default function Projects(props) {
            
             <ProjectItem Name="- Z U E S -" Information={zuesInfo} Link="https://zues11.herokuapp.com" Picture="zues.png"/>
 
+    
           
 
             </div>
