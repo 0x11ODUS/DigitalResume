@@ -1,23 +1,41 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../styles/styles.css'
 import ProgressBar from '../Components/ProgressBar.js'
-import {animated, useSpring} from 'react-spring'
 
+export default function About() {
+    var str = ".md";
+    const [kount,setKount] = useState(0)
+   
+    
+    
 
-export default function About(props) {
-
-    const springProps = useSpring({left :0, from:{ left:-2000}, config : {duration : 1500}})
+    useEffect(()=>{
+        if(kount < str.length){
+            setTimeout(()=>{
+                document.getElementById("intro").innerHTML += str.charAt(kount)
+                setKount(kount + 1);
+            }, 50)
+        }else if(kount >= str.length){
+            setTimeout(()=>{
+                document.getElementById('intro').innerHTML = "";
+                setKount(0)
+            }, 3500)
+        }
+        
+    },[kount])
     return(
-        <animated.div style={springProps} className="Main">
-                <h1><span className="hugeText">So, </span> About Me</h1>
-               <img src={require("../me3.jpg")} className="image"/>
-              
-                <p className="normalText" >
-              I Am A Passionate Graduate in The Field Of Computer Science Informatics. I Am A Huge loT Enthusiast And Hobbyist Driven By The Unshakable Urge To Design And Build Quality Software For Clients, While Satisfying And Completely Meeting Business Requirements. I Am A Hardworking Individual And Always Have A Beginner's Mind. I Am Always Willing To Learn, Teach , Unlearn What I Already Think I Know
-  And Relearn Anything In A Different Technique. I Believe There's A Technique To Getting Things Right And Most Times Getting Them Right The First Time. I'm Not A Copy Of All The Textbooks I've Read And Gone Through To Get My Qualification, Yet I Am A Compound Of The Most Critical Concepts From The Textbooks, Knowledge From People Who Are The Industry That Are Close To Me, The Knowledge I Gather Daily In My Interest, And The Skill To Use The Aformentioned In Synergy And Conjunction Such That Concepts May Be Related And Applied To Practical Examples And Situations, And Facts May Be Used To Support Certain Arguments And/Or Design Decisions. I Am A Very Focused, Driven And Practical Individual, I Understand The Basic Theory And Use That As A Basis Of Coming Up With A Creative, Innovative Solution.
-              </p>
+        <div className="Main">
+          
+          <div  className="introText">
+          <h1 id="intro2"><span id="introred">{"~$:"}</span>{" cat README"}<span id="intro"></span></h1>
+              <span id="cursor">|</span>
+            </div>
 
-            <h1 className="paddingHeader"><span className="hugeText">Education</span></h1>
+            <h1 className="paddingHeader"><span className="hugeText">BIO</span></h1>
+            <p id="bio" style={{textAlign:"left", marginLeft:200,width:"60%"}} className="normalText" ><span className="pink-text">Nkosana Khoza</span> is a Humble, self-motivated, resilient and dedicated young man. His ability to work in synergy with others is impeccable. Having strong leadership qualities and possessing a high adaptive efficacy, he is sure to be a substantial contribution to any team ,company and work enviroment. Interested in Tech in general, yet immensely fascinated and passionate about Cybersecurity , Software Engineering and awesome and exciting IoT & Electronics Projects.</p>
+
+            <h1 id="education" className="paddingHeader"><span className="hugeText">Education</span></h1>
+
            <ul className="paddingList">
                <li>
                <h2 className="pink-text"> <span className="normalText" >Grade 12 - Matric , </span>Finetown Secondary School  (2012 - 2016)</h2>
@@ -57,39 +75,32 @@ export default function About(props) {
            <div>
            <ul className="paddingList">
                 <li>
-                    <p className="normalText" >I Disassemble Old Electronics For Spare Parts In My Projects :)</p>
+                    <p className="normalText" >Indulges in CTFs on Platforms Like ctf.learn </p>
                 </li>
                 <li>
-                <p className="normalText" >I Flash And Test Custom Mobile Operating Systems</p>
-                </li>
-
-                <li>
-                <p className="normalText" >I Am A Call Of Duty Sniper</p>
+                <p className="normalText" >Solves Coding Challenges On HackerRank</p>
                 </li>
 
                 <li>
-                <p className="normalText" >I Meditate Daily</p>
+                <p className="normalText" >Always creating a stunning web application or robust system, mostly learning how to break and secure them ;) </p>
                 </li>
 
                 <li>
-                <p className="normalText" >I would one day like to be part of a Brain-Computer Interface Project. </p>
+                <p className="normalText" >Enjoys Watching DEFCON Security Conferences</p>
                 </li>
 
                 
-                <li>
-                <p className="normalText" >I would one day like to run my own Game Studio . </p>
-                </li>
            
             </ul>
            </div>
 
-           <h1 style={{paddingTop : 40}}><span className="hugeText">L</span> anguages</h1>
-           <div className="skillGrid">
+           <h1 id="lang" className="paddingHeader"><span className="hugeText">L</span> anguages</h1>
+           <div id="kills" className="skillGrid">
                     <ProgressBar Value="E" Name="IsiZulu" />
                     <ProgressBar Value="D" Name="English" />
             </div>
 
           
-        </animated.div>
+        </div>
     )
 }

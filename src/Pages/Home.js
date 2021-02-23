@@ -1,35 +1,56 @@
-import React from 'react';
-import Button from '../Components/Button';
+import React, { useEffect, useState } from 'react';
+import Footer from '../Components/Footer';
+import NavBar from '../Components/NavBar';
+import '../styles/Home.css'
 import '../styles/styles.css'
-import {useHistory} from 'react-router-dom'
-import {animated, useSpring} from 'react-spring'
+import {logo} from '../logo.svg'
 
 
-export default function Home(props) {
+export default function Home() {
+    var str = "<Welcome />";
+    var str2 = "[*] Target      : Nkosana Khoza";
+    const [kount,setKount] = useState(0)
+    const [index,setIndex] = useState(0)
+    
+    
 
-    let history = useHistory()
-    const springProps = useSpring({top :0, from:{ top:-1000}, config : {duration : 1500}})
+    useEffect(()=>{
+        if(kount < str.length){
+            setTimeout(()=>{
+                document.getElementById("intro").innerHTML += str.charAt(kount)
+                setKount(kount + 1);
+            }, 50)
+        }else if(kount >= str.length){
+            setTimeout(()=>{
+                document.getElementById('intro').innerHTML = "";
+                setKount(0)
+            }, 3500)
+        }
+        
+    },[kount, index])
+
 
     return(
-        <animated.div style={springProps} className="Main">
-            <div className="introText">
-                <h1><span className="hugeText">Welcome</span>to my <span className="pink-text-med">Digital Porfolio</span> . <br /> <br /> <br /> </h1>
-                <h1><span className="pink-text">My</span> name is  <span className="hugeText">Nkosana Khoza</span> , I am a <span className="pink-text-med">Software Engineer</span> .<span className="pink-text">.</span>.<span className="pink-text">.</span></h1>
-                <p className="normalText">I am a <span className="pink-text-med">F</span><span className="pink-text">ull</span> <span className="pink-text-med">S</span><span className="pink-text">tack Software Developer</span> . My main focus is  <span className="pink-text-med">Quality and Maintainable Solutions</span> , intensely <span className="pink-text-med">Minimalistic UI</span> , and producing products that <span className="pink-text-med">S</span>atisfy<span className="pink-text-med"> Customer requirements</span> and Aid Them in <span className="pink-text-med"> achieving </span> their <span className="pink-text-med" >Business Goals</span>. . .</p>
+        <div className="Main">
+            
+            
+            <div  className="logoContainer">
+                <img className="logo" src={require("../new.svg")}  />
             </div>
 
-            <div style={{paddingTop : 50}}>
-               {/* <h3 className="normalText">
-                    Learn more about Me <a href="/AboutMe" style={{textDecoration:"underline",color : "rgb(158,7,81)",fontSize: 38}} > Here</a>
-    </h3> */}
-
-                <div >
-                <Button  Text="Click To Learn More" onClick={() =>{ 
-                    console.log("I Am Clicked")
-                    history.push("/AboutMe")
-                }}/>
-                </div>
+            <div id="welcome"  className="introText">
+              <h1 id="intro2">{"~$: "}<span id="intro"></span></h1>
+              <span id="cursor">|</span>
             </div>
-        </animated.div>
+
+            <div className="content">
+                <h1 id="introStatement">My name is <span className="pink-text">Nkosana Khoza</span>, I am a cybersecurity enthusiast and an aspiring Ethical Penetration Tester. I just recently completed my Degree in Computer Science & Informatics and I am looking for a stepping stone into the <span className="pink-text">Cybersecurity/Software Engineering</span> industry. </h1>
+                <a id="meLink" className="button" href="/AboutMe" > AFFIRMATIVE </a>
+            </div>
+            
+
+        </div>
     )
+
+
 }

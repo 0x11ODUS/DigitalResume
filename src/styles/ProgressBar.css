@@ -1,0 +1,40 @@
+.Skill{
+
+    background-color: var(--mainColor);
+    height: 10px;
+}
+
+.A{
+    width: 20%;
+}
+
+.B{
+    width: 40%;
+}
+
+.C{
+    width: 60%;
+}
+
+.D{
+    width: 80%;
+}
+
+.E{
+    width: 100%;
+}
+
+
+.ProgressContainer{
+    width: 300px;
+    background-color: transparent;
+    border: var(--secColor) 2px dotted;
+    color: var(--baseColor);
+    border-radius: 3px;
+    
+}
+
+.skillText{
+    color:var(--baseColor);
+    text-align: center;
+}

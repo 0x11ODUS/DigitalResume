@@ -1,0 +1,50 @@
+#introStatement{
+    color :white;
+    display: inline;
+    text-align: center;
+    width: 75vW;
+}
+
+#meLink{
+    margin-top: 100px;
+    justify-self: center;
+}
+
+
+@keyframes type{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width: 75%;
+    }
+}
+
+.content{
+    display:grid;
+    justify-content: center;
+}
+
+.button{
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    border: rgba(126, 12, 12, 0.74) solid 1px;
+    border-radius: 10px; 
+    transition: 100ms ease-out;
+}
+
+.button:hover{
+    background-color: var(--mainColor);
+    color: var(--baseColor);
+    transform:scale(1.2);
+    transition:50ms ease-in-out;
+}
