@@ -1,28 +1,4 @@
-.contact-grid{
-    display: flex;
-    justify-content:center;
-    margin-top: 50px;
-}
 
-.contactIntro{
-   
-    text-align: center;
-    color: aliceblue;
-}
-
-#vector{
-    margin-top: 50px;
-}
-
-.nav-item{
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
-    margin-right:25px;
-    text-decoration: none;
-    color: var(--mainColor);
-    transition: 200ms ease-out;
-}
 
 @keyframes spinIcon{
     from{
@@ -39,18 +15,45 @@
     }
 }
 
-.contact-icon{
-    margin-bottom: 15px;
-    font-size: 60px;
-}
 
-.nav-item:hover{
-    transform: scale(1.3);
-    transition: 50ms ease-in-out;
-}
+@media(min-width:1025px){
+    .contact-icon{
+        margin-bottom: 15px;
+        font-size: 60px;
+    }
+    
+    .nav-item:hover{
+        transform: scale(1.3);
+        transition: 50ms ease-in-out;
+    }
+    
+    .nav-item:hover > .contact-icon {
+        
+        animation: 500ms spinIcon ease-in-out;
+    }
 
-.nav-item:hover > .contact-icon {
+    .contact-grid{
+        display: flex;
+        justify-content:center;
+        margin-top: 50px;
+    }
     
-    animation: 500ms spinIcon ease-in-out;
+    .contactIntro{
+        text-align: center;
+        color: aliceblue;
+    }
     
+    #vector{
+        margin-top: 50px;
+    }
+    
+    .nav-item{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-right:25px;
+        text-decoration: none;
+        color: var(--mainColor);
+        transition: 200ms ease-out;
+    } 
 }

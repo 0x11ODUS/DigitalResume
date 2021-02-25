@@ -32,7 +32,7 @@ export default function About() {
             </div>
 
             <h1 className="paddingHeader"><span className="hugeText">BIO</span></h1>
-            <p id="bio" style={{textAlign:"left", marginLeft:200,width:"60%"}} className="normalText" ><span className="pink-text">Nkosana Khoza</span> is a Humble, self-motivated, resilient and dedicated young man. His ability to work in synergy with others is impeccable. Having strong leadership qualities and possessing a high adaptive efficacy, he is sure to be a substantial contribution to any team ,company and work enviroment. Interested in Tech in general, yet immensely fascinated and passionate about Cybersecurity , Software Engineering and awesome and exciting IoT & Electronics Projects.</p>
+            <p id="bio" className="normalText" ><span className="pink-text">Nkosana Khoza</span> is a Humble, self-motivated, resilient and dedicated young man. His ability to work in synergy with others is impeccable. Having strong leadership qualities and possessing a high adaptive efficacy, he is sure to be a substantial contribution to any team ,company and work enviroment. Interested in Tech in general, yet immensely fascinated and passionate about Cybersecurity , Software Engineering and awesome and exciting IoT & Electronics Projects.</p>
 
             <h1 id="education" className="paddingHeader"><span className="hugeText">Education</span></h1>
 

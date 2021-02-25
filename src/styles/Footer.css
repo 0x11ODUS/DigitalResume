@@ -1,25 +1,29 @@
-.footerBody{
-    background: linear-gradient(  rgba(24, 6, 6, 0.199),rgba(85, 7, 7, 0.562));
-    width: 100vw;
-    height: 40px;
-    position: absolute;
-    bottom: 0;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+@media(min-width:1025px){
+    .footerBody{
+        background: linear-gradient(  rgba(24, 6, 6, 0.199),rgba(85, 7, 7, 0.562));
+        width: 100vw;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #footerText{
+        color:var(--baseColor);
+        font-size: 17px;
+    }
+    
+    #maintainer{
+        color: var(--mainColor);
+        text-decoration: none;
+    }
+    
+    #maintainer:hover{
+        color:var(--baseColor);
+    }
     
 }
 
-#footerText{
-    color:var(--baseColor);
-    font-size: 17px;
-}
-
-#maintainer{
-    color: var(--mainColor);
-    text-decoration: none;
-}
-
-#maintainer:hover{
-    color:var(--baseColor);
-}

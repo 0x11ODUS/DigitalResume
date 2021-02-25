@@ -1,7 +1,26 @@
-.Skill{
+@media(min-width:1025px){
+    .Skill{
 
-    background-color: var(--mainColor);
-    height: 10px;
+        background-color: var(--mainColor);
+        height: 10px;
+    }
+    
+    
+    
+    
+    .ProgressContainer{
+        width: 300px;
+        background-color: transparent;
+        border: var(--secColor) 2px dotted;
+        color: var(--baseColor);
+        border-radius: 3px;
+        
+    }
+    
+    .skillText{
+        color:var(--baseColor);
+        text-align: center;
+    }
 }
 
 .A{
@@ -22,19 +41,4 @@
 
 .E{
     width: 100%;
-}
-
-
-.ProgressContainer{
-    width: 300px;
-    background-color: transparent;
-    border: var(--secColor) 2px dotted;
-    color: var(--baseColor);
-    border-radius: 3px;
-    
-}
-
-.skillText{
-    color:var(--baseColor);
-    text-align: center;
 }
